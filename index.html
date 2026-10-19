@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <h1>todos</h1>
+    <div class="task-header">
+        <button class="chevron-down" onclick="completeAll()"></button>
+        <input id="input-task" placeholder="What needs to be done" type="text" />
+    </div>
+    <ul id="task-list"></ul>
+    <div>
+    <div id="task-details">
+        <span id="items-left">items left</span>
+        <button onclick="showAll()">All</button>
+        <button onclick="showAllActiveTasks()">Active</button>
+        <button onclick="showAllCompletedTasks()">Completed</button>
+        <button onclick="removeCompletedTasks()" id="clear-completed-task">Clear Completed</button>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+h1{
+    text-align: center;
+}
+
+
+.chevron-down {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transform: translateY(-70%) rotate(45deg);
+z-index: 1;
+left: 20px;
+top: 50%;
+position:absolute;
+
+}
+#input-task {
+  width: 100%;
+  padding: 16px 16px 16px 60px;
+  font-size: 24px;
+}
+
+
+.task-header{
+    display: flex;
+    align-content: center;
+    gap: 15px;
+    position: relative;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+#task-details button.selected {
+  border: 1px solid rgb(213, 13, 23);
+}
+#task-list li span{
+    flex: 1;
+    margin-right: 15px;
+}
+#task-list{
+    padding: 0;
+    margin: 0;
+}
+#task-list li{
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+}
+#task-list li input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+.completed span{
+    color:#aaa;
+    text-decoration: line-through;
+}
+
+#delete-btn {
+  color: #cd0707;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s;
+}
+#task-list li:hover #delete-btn {
+  opacity: 1;
+}
+#delete-btn:hover {
+  color: #af5b5e;
+}
+
+#task-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #777;
+}
+#task-details button {
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+#task-details button:hover {
+  border-color: #eee;
+}
